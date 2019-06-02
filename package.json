@@ -15,5 +15,6 @@
     "@types/react-dom": "^16.8.4"
   },
   "main": "lib/index.js",
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "keywords": ["react", "hooks", "scroll"]
 }
