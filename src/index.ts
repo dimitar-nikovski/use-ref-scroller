@@ -1,2 +1,1 @@
-import { useRefScroller } from "./useRefScroller";
-export default useRefScroller;
+export { ScrollDirections, useRefScroller as default } from './useRefScroller';

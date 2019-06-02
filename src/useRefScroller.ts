@@ -1,6 +1,6 @@
 import { useRef, useCallback, useEffect } from 'react';
 
-enum ScrollDirections {
+export enum ScrollDirections {
   Horiontal,
   Vertical
 }
