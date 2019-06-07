@@ -10,15 +10,15 @@
     "name": "Dimitar Nikovski",
     "email": "nikovski@live.com"
   },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
   "devDependencies": {
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "keywords": ["react", "hooks", "scroll"]
+  "keywords": ["react", "hooks", "scroll"],
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
