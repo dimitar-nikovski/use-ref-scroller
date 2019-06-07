@@ -1,6 +1,7 @@
 ## use-ref-scroller
 
 A react hook for scrolling to DOM elements
+
 Only 599 bytes minified + g-zipped
 
 #### Use case
