@@ -60,8 +60,8 @@ interface ScrollOpts {
 // scroll the element to the beginning of the screen horizontally
 const { elRef, scroll } = useRefScroller({ percentOfElement: 0, percentOfContainer: 0 });
 
-// scroll the center of the element to the center of the screen
-const { elRef, scroll } = useRefScroller();
+// scroll the center of the element to the center of the screen, after the first render
+const { elRef, scroll } = useRefScroller({ onMount: true });
 
 // scroll the element 200px from the bottom
 const { elRef, scroll } = useRefScroller({ offsetPx: -200, percentOfContainer: 100 });
