@@ -17,15 +17,16 @@ function scrollToPercent(el, { container, percentOfElement, offsetPX, direction,
         ? container.innerHeight
         : container.innerWidth
       : isVertical
-      ? container.scrollHeight
-      : container.scrollWidth;
+        ? container.scrollHeight
+        : container.scrollWidth;
 
   let addOffset = (refSize * percentOfElement) / 100;
   if (offsetPX) {
     addOffset += offsetPX;
   }
+
   const containerScroll = isVertical ? container.scrollY : container.scrollX;
-  const newScroll = elemScroll + containerScroll - (scrollSize * percentOfContainer) / 100 + addOffset;
+  const newScroll = containerScroll + elemScroll + ((scrollSize * percentOfContainer / 100) + addOffset);
 
   const scrollObj = isVertical ? { top: newScroll } : { left: newScroll };
 
